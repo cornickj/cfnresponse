@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cfnresponse",
-    version="1.0.2",
+    version="1.0.3",
     author="Amazon Web Services",
     description="Send a response object to a custom resource by way of an Amazon S3 presigned URL",
     long_description=long_description,
@@ -18,8 +18,5 @@ setuptools.setup(
         "Development Status :: 5 - Production/Stable",
         "License :: Other/Proprietary License",
         "Topic :: Software Development :: Libraries :: Python Modules"
-    ],
-    install_requires=[
-        'botocore<1.13.0',  # https://github.com/boto/botocore/pull/1829
     ],
 )
